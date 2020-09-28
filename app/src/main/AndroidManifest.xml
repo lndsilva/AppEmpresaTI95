@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.local.appempresati95">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Menu_Activity"></activity>
+        <activity android:name=".Login_Activity" /> <!-- Todo o aplicativo que tem uma classe e um layout é lançado dentro de um bloco Activity -->
+        <activity android:name=".Splash_Activity" />
+        <activity android:name=".MainActivity">
+
+            <!-- Bloco de intent filter vai mostrar qual será a janela que irá rodar primeiro -->
+            <intent-filter>
+
+                <!-- Diz que irá rodar primeiro -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Lança o aplicativo para janela do celular -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
