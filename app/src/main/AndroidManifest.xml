@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu_Activity"></activity>
-        <activity android:name=".Login_Activity" /> <!-- Todo o aplicativo que tem uma classe e um layout é lançado dentro de um bloco Activity -->
-        <activity android:name=".Splash_Activity" />
-        <activity android:name=".MainActivity">
 
+        <activity android:name=".Menu_Activity"></activity>
+        <activity android:name=".Login_Activity" >
             <!-- Bloco de intent filter vai mostrar qual será a janela que irá rodar primeiro -->
             <intent-filter>
 
@@ -22,6 +20,11 @@
                 <!-- Lança o aplicativo para janela do celular -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Splash_Activity" />
+        <activity android:name=".MainActivity">
+
+
         </activity>
     </application>
 
